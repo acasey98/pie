@@ -63,13 +63,25 @@ const pies = [
 const buildPies=()=>{
     let domString = '';
     for (let i = 0; i < pies.length; i++){
-        domString += `<div>${pies[i].name}</div>`
+        domString += `<div class='card'>`;
+        domString += `<div>${pies[i].name}</div>`;
+        domString += `<img src=${pies[i].imageUrl}>;`
+        domString += `</div>`;
     };
     printToDom('pie-list',domString);
 };
 
+const buttonClick = () =>{
+  console.log('ecksdee');
+};
+
+const buttonEvents = () => {
+  document.getElementById('Zoe').addEventListener('click', buttonClick);
+};
+
 const init = () =>{
-    buildPies();
+  buttonEvents();  
+  buildPies();
 };
 
 init();

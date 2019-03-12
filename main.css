@@ -1,3 +1,28 @@
+
+.flex-container{
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+.pies{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+.card{
+    border: 1px solid lightblue;
+    padding: 18px;
+    margin: auto;
+    margin-top: 10px;
+    flex-flow: wrap;
+    width: 30%;
+}
+
 body{
     background-color: darkorange
 }
+
