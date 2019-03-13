@@ -82,7 +82,7 @@ const buttonClick = (e) =>{
     }
   });
   if(buttonId === 'All'){
-    buildPies(pies);
+    return buildPies(pies);
   }
 
   buildPies(selectedPies);
